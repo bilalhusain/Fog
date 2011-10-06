@@ -1,0 +1,11 @@
+{
+	  "name": "fog"
+	, "version": "0.1.0"
+	, "description": "poor man's private npm repository"
+	, "dependencies":
+		{ "express": "*"
+		, "winston": "*"
+		}
+	, "private": "true"
+}
+

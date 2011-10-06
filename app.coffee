@@ -45,7 +45,7 @@ loadRegistry =  () ->
 	tarballs = fs.readdirSync './tarballs'
 	for tarball in tarballs
 		m = /^(.*)-(\d+)\.(\d+)\.(\d+)\.tgz$/.exec tarball
-		return if not m # not a module tarball
+		continue if not m # not a module tarball
 
 		if not registry[m[1]]
 			registry[m[1]] = new Module(m[1], '0.0.0', [])
